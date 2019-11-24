@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/ToDoList.css" />
+    <title>To-Do List</title>
+	
+	
+</head>
+
+<body onLoad="getAllData()">
+	<div id="output1">
+	 <table>
+	  <tr id="title">
+		<th>Done?</th>
+		<th>Task</th>
+		<th><img src = "img/calendar2.gif" height = "100px" width = "110px"></th>
+		<th>Priority</th>
+		<th>Category</th>
+	  </tr>
+	</table>
+	 </div>
+	 <div id="output2">
+		
+		
+	 
+	 </div>
+	 
+	 <img src="img/pencil2.gif" id = "decor">
+	 
+	 <p id="labels" ></p>
+	 
+	<div class="main" >
+		
+		<input type="text" value="enter to do item" id="item">
+		
+		<input type='date' id='dueDate' min="2019-10-01" max="2020-12-31">
+		
+		
+		<select id='priority'>
+		<option value='High' id="high">High</option>
+		<option value='Medium' id="med">Medium</option> 
+		<option value='Low' id="low">Low</option>
+		<select>
+		
+		<select id='cat'>
+		<option value='Personal' selected>Personal</option>
+		<option value='Work'>Work</option> 
+		<select>
+		
+		<img src="img\plus3.gif" height = "20px" width = "20px" onclick="plus()">
+	</div>
+	<img src="img/pencil2.gif" id = "decor2" style="transform: scaleX(-1)" >
+	
+    <script type="text/javascript" src="js/ToDoList.js"></script>
+	
+</body>
+
+</html>
